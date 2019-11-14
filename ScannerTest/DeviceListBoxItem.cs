@@ -1,6 +1,6 @@
 ﻿using WIA;
 
-namespace Cyotek.QuickScan
+namespace Cyotek.Demo.ScannerTest
 {
   internal sealed class DeviceListBoxItem
   {
