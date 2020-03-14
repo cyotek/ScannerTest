@@ -176,7 +176,7 @@
       this.deviceComboBox.Name = "deviceComboBox";
       this.deviceComboBox.Size = new System.Drawing.Size(291, 21);
       this.deviceComboBox.TabIndex = 0;
-      this.deviceComboBox.SelectedIndexChanged += new System.EventHandler(this.deviceComboBox_SelectedIndexChanged);
+      this.deviceComboBox.SelectedIndexChanged += new System.EventHandler(this.DeviceComboBox_SelectedIndexChanged);
       // 
       // showSelectDeviceButton
       // 

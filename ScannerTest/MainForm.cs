@@ -15,7 +15,7 @@ namespace Cyotek.Demo.ScannerTest
 
     private readonly string[] _photoMasks = { "*.bmp", "*.gif", "*.jpg", "*.png", "*.tif", "*.tiff" };
 
-    private IDeviceManager _deviceManager;
+    private DeviceManager _deviceManager;
 
     private WiaDeviceType _deviceType;
 
@@ -77,7 +77,7 @@ namespace Cyotek.Demo.ScannerTest
       AboutDialog.OpenCyotekHomePage();
     }
 
-    private void deviceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+    private void DeviceComboBox_SelectedIndexChanged(object sender, EventArgs e)
     {
       _items = null;
     }
@@ -122,7 +122,7 @@ namespace Cyotek.Demo.ScannerTest
 
     private void LoadDevices()
     {
-      IDeviceInfos devices;
+      DeviceInfos devices;
 
       _deviceManager = new DeviceManager();
 
@@ -131,11 +131,11 @@ namespace Cyotek.Demo.ScannerTest
       deviceComboBox.BeginUpdate();
       deviceComboBox.Items.Clear();
 
-      for (int i = 0; i < devices.Count; i++)
+      for (int i = 1; i <= devices.Count; i++)
       {
-        IDeviceInfo device;
+        DeviceInfo device;
 
-        device = devices[i + 1];
+        device = devices[i];
 
         if (_deviceType == WiaDeviceType.UnspecifiedDeviceType || device.Type == _deviceType)
         {
@@ -197,7 +197,7 @@ namespace Cyotek.Demo.ScannerTest
       }
     }
 
-    private void PerformDialogAtion(Action<Device, ICommonDialog> action, bool allowNullDevice = false)
+    private void PerformDialogAtion(Action<Device, CommonDialog> action, bool allowNullDevice = false)
     {
       Device device;
 
@@ -205,7 +205,7 @@ namespace Cyotek.Demo.ScannerTest
 
       if (device != null || allowNullDevice)
       {
-        ICommonDialog dialog;
+        CommonDialog dialog;
 
         dialog = new CommonDialog();
 
@@ -344,7 +344,7 @@ namespace Cyotek.Demo.ScannerTest
     {
       this.PerformDialogAtion((device, dialog) =>
       {
-        _items = dialog.ShowSelectItems(device);
+        _items = dialog.ShowSelectItems(device, SingleSelect: false);
       });
     }
 

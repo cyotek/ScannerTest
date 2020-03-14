@@ -49,17 +49,16 @@ namespace Cyotek.Demo.ScannerTest
 
       using (MemoryStream stream = new MemoryStream(data))
       {
-        Image scannedImage;
-
-        scannedImage = Image.FromStream(stream);
-
-        result = new Bitmap(image.Width, image.Height, PixelFormat.Format32bppArgb);
-
-        using (Graphics g = Graphics.FromImage(result))
+        using (Image scannedImage = Image.FromStream(stream))
         {
-          g.Clear(Color.Transparent);
-          g.PageUnit = GraphicsUnit.Pixel;
-          g.DrawImage(scannedImage, new Rectangle(0, 0, image.Width, image.Height));
+          result = new Bitmap(image.Width, image.Height, PixelFormat.Format32bppArgb);
+
+          using (Graphics g = Graphics.FromImage(result))
+          {
+            g.Clear(Color.Transparent);
+            g.PageUnit = GraphicsUnit.Pixel;
+            g.DrawImage(scannedImage, new Rectangle(0, 0, image.Width, image.Height));
+          }
         }
       }
 
