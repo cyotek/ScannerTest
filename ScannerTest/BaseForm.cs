@@ -73,7 +73,7 @@ namespace Cyotek.Demo.ScannerTest
     {
       if (!this.DesignMode)
       {
-      //  this.Font = SystemFonts.MessageBoxFont;
+        this.Font = SystemFonts.MessageBoxFont;
       }
 
       base.OnLoad(e);

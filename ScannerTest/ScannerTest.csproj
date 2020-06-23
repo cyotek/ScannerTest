@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="DeviceListBoxItem.cs" />
     <Compile Include="FileInfo.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
