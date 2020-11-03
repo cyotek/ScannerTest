@@ -88,9 +88,9 @@
       printingGroupBox.Controls.Add(this.showPhotoPrintingWizardButton);
       printingGroupBox.Controls.Add(this.filesListBox);
       printingGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-      printingGroupBox.Location = new System.Drawing.Point(0, 184);
+      printingGroupBox.Location = new System.Drawing.Point(9, 193);
       printingGroupBox.Name = "printingGroupBox";
-      printingGroupBox.Size = new System.Drawing.Size(384, 220);
+      printingGroupBox.Size = new System.Drawing.Size(366, 202);
       printingGroupBox.TabIndex = 2;
       printingGroupBox.TabStop = false;
       printingGroupBox.Text = "Printing";
@@ -107,7 +107,7 @@
       // showPhotoPrintingWizardButton
       // 
       this.showPhotoPrintingWizardButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-      this.showPhotoPrintingWizardButton.Location = new System.Drawing.Point(6, 191);
+      this.showPhotoPrintingWizardButton.Location = new System.Drawing.Point(6, 173);
       this.showPhotoPrintingWizardButton.Name = "showPhotoPrintingWizardButton";
       this.showPhotoPrintingWizardButton.Size = new System.Drawing.Size(219, 23);
       this.showPhotoPrintingWizardButton.TabIndex = 2;
@@ -126,7 +126,7 @@
       this.filesListBox.Location = new System.Drawing.Point(6, 32);
       this.filesListBox.Name = "filesListBox";
       this.filesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-      this.filesListBox.Size = new System.Drawing.Size(372, 153);
+      this.filesListBox.Size = new System.Drawing.Size(354, 135);
       this.filesListBox.TabIndex = 1;
       // 
       // deviceGroupBox
@@ -136,9 +136,9 @@
       deviceGroupBox.Controls.Add(this.deviceComboBox);
       deviceGroupBox.Controls.Add(this.showSelectDeviceButton);
       deviceGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
-      deviceGroupBox.Location = new System.Drawing.Point(0, 0);
+      deviceGroupBox.Location = new System.Drawing.Point(9, 9);
       deviceGroupBox.Name = "deviceGroupBox";
-      deviceGroupBox.Size = new System.Drawing.Size(384, 92);
+      deviceGroupBox.Size = new System.Drawing.Size(366, 92);
       deviceGroupBox.TabIndex = 0;
       deviceGroupBox.TabStop = false;
       deviceGroupBox.Text = "&Device:";
@@ -174,14 +174,14 @@
       this.deviceComboBox.FormattingEnabled = true;
       this.deviceComboBox.Location = new System.Drawing.Point(6, 21);
       this.deviceComboBox.Name = "deviceComboBox";
-      this.deviceComboBox.Size = new System.Drawing.Size(291, 21);
+      this.deviceComboBox.Size = new System.Drawing.Size(273, 21);
       this.deviceComboBox.TabIndex = 0;
       this.deviceComboBox.SelectedIndexChanged += new System.EventHandler(this.DeviceComboBox_SelectedIndexChanged);
       // 
       // showSelectDeviceButton
       // 
       this.showSelectDeviceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.showSelectDeviceButton.Location = new System.Drawing.Point(303, 19);
+      this.showSelectDeviceButton.Location = new System.Drawing.Point(285, 19);
       this.showSelectDeviceButton.Name = "showSelectDeviceButton";
       this.showSelectDeviceButton.Size = new System.Drawing.Size(75, 23);
       this.showSelectDeviceButton.TabIndex = 1;
@@ -197,20 +197,19 @@
       imageGroupBox.Controls.Add(this.showAquireImageButton);
       imageGroupBox.Controls.Add(this.showTransferButton);
       imageGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-      imageGroupBox.Location = new System.Drawing.Point(0, 0);
+      imageGroupBox.Location = new System.Drawing.Point(9, 9);
       imageGroupBox.Name = "imageGroupBox";
-      imageGroupBox.Size = new System.Drawing.Size(412, 404);
+      imageGroupBox.Size = new System.Drawing.Size(394, 386);
       imageGroupBox.TabIndex = 0;
       imageGroupBox.TabStop = false;
       imageGroupBox.Text = "Image Aquisition";
       // 
       // showTransferSelectedButton
       // 
-      this.showTransferSelectedButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.showTransferSelectedButton.Location = new System.Drawing.Point(206, 77);
+      this.showTransferSelectedButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.showTransferSelectedButton.Location = new System.Drawing.Point(209, 77);
       this.showTransferSelectedButton.Name = "showTransferSelectedButton";
-      this.showTransferSelectedButton.Size = new System.Drawing.Size(175, 23);
+      this.showTransferSelectedButton.Size = new System.Drawing.Size(179, 23);
       this.showTransferSelectedButton.TabIndex = 4;
       this.showTransferSelectedButton.Text = "Transfer (Selected Item)";
       this.showTransferSelectedButton.UseVisualStyleBackColor = true;
@@ -223,7 +222,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.previewImageBox.Location = new System.Drawing.Point(9, 106);
       this.previewImageBox.Name = "previewImageBox";
-      this.previewImageBox.Size = new System.Drawing.Size(394, 292);
+      this.previewImageBox.Size = new System.Drawing.Size(376, 274);
       this.previewImageBox.TabIndex = 3;
       // 
       // showAcquisitionWizardButton
@@ -232,7 +231,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.showAcquisitionWizardButton.Location = new System.Drawing.Point(6, 19);
       this.showAcquisitionWizardButton.Name = "showAcquisitionWizardButton";
-      this.showAcquisitionWizardButton.Size = new System.Drawing.Size(400, 23);
+      this.showAcquisitionWizardButton.Size = new System.Drawing.Size(382, 23);
       this.showAcquisitionWizardButton.TabIndex = 0;
       this.showAcquisitionWizardButton.Text = "Acquisition &Wizard...";
       this.showAcquisitionWizardButton.UseVisualStyleBackColor = true;
@@ -244,7 +243,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.showAquireImageButton.Location = new System.Drawing.Point(6, 48);
       this.showAquireImageButton.Name = "showAquireImageButton";
-      this.showAquireImageButton.Size = new System.Drawing.Size(400, 23);
+      this.showAquireImageButton.Size = new System.Drawing.Size(382, 23);
       this.showAquireImageButton.TabIndex = 1;
       this.showAquireImageButton.Text = "Acquire &Image...";
       this.showAquireImageButton.UseVisualStyleBackColor = true;
@@ -252,11 +251,9 @@
       // 
       // showTransferButton
       // 
-      this.showTransferButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.showTransferButton.Location = new System.Drawing.Point(6, 77);
       this.showTransferButton.Name = "showTransferButton";
-      this.showTransferButton.Size = new System.Drawing.Size(175, 23);
+      this.showTransferButton.Size = new System.Drawing.Size(179, 23);
       this.showTransferButton.TabIndex = 2;
       this.showTransferButton.Text = "&Transfer (Default)";
       this.showTransferButton.UseVisualStyleBackColor = true;
@@ -268,9 +265,9 @@
       itemsGroupBox.Controls.Add(this.showItemPropertiesButton);
       itemsGroupBox.Controls.Add(this.showSelectItemsButton);
       itemsGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
-      itemsGroupBox.Location = new System.Drawing.Point(0, 92);
+      itemsGroupBox.Location = new System.Drawing.Point(9, 101);
       itemsGroupBox.Name = "itemsGroupBox";
-      itemsGroupBox.Size = new System.Drawing.Size(384, 92);
+      itemsGroupBox.Size = new System.Drawing.Size(366, 92);
       itemsGroupBox.TabIndex = 1;
       itemsGroupBox.TabStop = false;
       itemsGroupBox.Text = "Items";
@@ -289,11 +286,9 @@
       // 
       // showItemPropertiesButton
       // 
-      this.showItemPropertiesButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.showItemPropertiesButton.Location = new System.Drawing.Point(106, 19);
+      this.showItemPropertiesButton.Location = new System.Drawing.Point(93, 19);
       this.showItemPropertiesButton.Name = "showItemPropertiesButton";
-      this.showItemPropertiesButton.Size = new System.Drawing.Size(88, 23);
+      this.showItemPropertiesButton.Size = new System.Drawing.Size(75, 23);
       this.showItemPropertiesButton.TabIndex = 1;
       this.showItemPropertiesButton.Text = "Propert&ies...";
       this.showItemPropertiesButton.UseVisualStyleBackColor = true;
@@ -301,11 +296,9 @@
       // 
       // showSelectItemsButton
       // 
-      this.showSelectItemsButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.showSelectItemsButton.Location = new System.Drawing.Point(12, 19);
       this.showSelectItemsButton.Name = "showSelectItemsButton";
-      this.showSelectItemsButton.Size = new System.Drawing.Size(88, 23);
+      this.showSelectItemsButton.Size = new System.Drawing.Size(75, 23);
       this.showSelectItemsButton.TabIndex = 0;
       this.showSelectItemsButton.Text = "&Select Items...";
       this.showSelectItemsButton.UseVisualStyleBackColor = true;
@@ -322,10 +315,12 @@
       splitContainer.Panel1.Controls.Add(printingGroupBox);
       splitContainer.Panel1.Controls.Add(itemsGroupBox);
       splitContainer.Panel1.Controls.Add(deviceGroupBox);
+      splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(9);
       // 
       // splitContainer.Panel2
       // 
       splitContainer.Panel2.Controls.Add(imageGroupBox);
+      splitContainer.Panel2.Padding = new System.Windows.Forms.Padding(9);
       splitContainer.Size = new System.Drawing.Size(800, 404);
       splitContainer.SplitterDistance = 384;
       splitContainer.TabIndex = 1;
