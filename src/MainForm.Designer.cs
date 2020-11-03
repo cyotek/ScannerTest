@@ -1,4 +1,4 @@
-﻿namespace Cyotek.Demo.ScannerTest
+﻿namespace Cyotek.Demo
 {
   partial class MainForm
   {
@@ -352,7 +352,7 @@
       // exitToolStripMenuItem
       // 
       this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-      this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+      this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
       this.exitToolStripMenuItem.Text = "E&xit";
       this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
       // 
@@ -445,7 +445,7 @@
       // statusToolStripStatusLabel
       // 
       this.statusToolStripStatusLabel.Name = "statusToolStripStatusLabel";
-      this.statusToolStripStatusLabel.Size = new System.Drawing.Size(655, 17);
+      this.statusToolStripStatusLabel.Size = new System.Drawing.Size(686, 17);
       this.statusToolStripStatusLabel.Spring = true;
       this.statusToolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
       // 
@@ -473,7 +473,7 @@
       this.Name = "MainForm";
       this.ShowIcon = true;
       this.ShowInTaskbar = true;
-      this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "cyotek.com WIA Demonstration";
       printingGroupBox.ResumeLayout(false);
       printingGroupBox.PerformLayout();

@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~F:Cyotek.Demo.ScannerTest.NativeConstants.WIA_S_NO_DEVICE_AVAILABLE")]
+[assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "Win32 Constant", Scope = "member", Target = "~F:Cyotek.Demo.ScannerTest.NativeConstants.WIA_S_NO_DEVICE_AVAILABLE")]

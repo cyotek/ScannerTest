@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Cyotek.Demo.ScannerTest;
+using Cyotek.Demo.Windows.Forms;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using WIA;
 using CommonDialog = WIA.CommonDialog;
-using FileInfo = Cyotek.Demo.ExifOrientation.FileInfo;
 
-namespace Cyotek.Demo.ScannerTest
+namespace Cyotek.Demo
 {
   internal partial class MainForm : BaseForm
   {
@@ -75,6 +76,8 @@ namespace Cyotek.Demo.ScannerTest
     private void CyotekWebLinkToolStripStatusLabel_Click(object sender, EventArgs e)
     {
       AboutDialog.OpenCyotekHomePage();
+
+      cyotekWebLinkToolStripStatusLabel.LinkVisited = true;
     }
 
     private void DeviceComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -288,7 +291,7 @@ namespace Cyotek.Demo.ScannerTest
     {
       if (_items?.Count > 0)
       {
-        this.PerformDialogAtion((device, dialog) => dialog.ShowItemProperties(_items[1]));
+        this.PerformDialogAtion((_, dialog) => dialog.ShowItemProperties(_items[1]));
       }
       else
       {
@@ -342,10 +345,7 @@ namespace Cyotek.Demo.ScannerTest
 
     private void ShowSelectItemsButton_Click(object sender, EventArgs e)
     {
-      this.PerformDialogAtion((device, dialog) =>
-      {
-        _items = dialog.ShowSelectItems(device, SingleSelect: false);
-      });
+      this.PerformDialogAtion((device, dialog) => _items = dialog.ShowSelectItems(device, SingleSelect: false));
     }
 
     private void ShowTransferButton_Click(object sender, EventArgs e)

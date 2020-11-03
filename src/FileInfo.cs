@@ -1,35 +1,45 @@
 ﻿using System.IO;
 
 // Loading the color palette from a BBM/LBM image file using C
-// http://cyotek.com/blog/loading-the-color-palette-from-a-bbm-lbm-image-file-using-csharp
+// https://www.cyotek.com/blog/loading-the-color-palette-from-a-bbm-lbm-image-file-using-csharp
+
 // Copyright © 2014 Cyotek Ltd. All Rights Reserved.
 
-// This work is licensed under the Creative Commons Attribution 4.0 International License.
-// To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+// This work is licensed under the MIT License.
+// See LICENSE.TXT for the full text
 
-// Found this example useful? 
+// Found this example useful?
 // https://www.paypal.me/cyotek
 
-namespace Cyotek.Demo.ExifOrientation
+namespace Cyotek.Demo
 {
   internal class FileInfo
   {
-    #region Constructors
+    #region Private Fields
+
+    private readonly string _fullPath;
+
+    #endregion Private Fields
+
+    #region Public Constructors
 
     public FileInfo(string fullPath)
     {
-      this.FullPath = fullPath;
+      _fullPath = fullPath;
     }
 
-    #endregion
+    #endregion Public Constructors
 
-    #region Properties
+    #region Public Properties
 
-    public string FullPath { get; set; }
+    public string FullPath
+    {
+      get { return _fullPath; }
+    }
 
-    #endregion
+    #endregion Public Properties
 
-    #region Methods
+    #region Public Methods
 
     /// <summary>
     /// Returns a string that represents the current object.
@@ -39,9 +49,9 @@ namespace Cyotek.Demo.ExifOrientation
     /// </returns>
     public override string ToString()
     {
-      return Path.GetFileName(this.FullPath) ?? base.ToString();
+      return Path.GetFileName(_fullPath);
     }
 
-    #endregion
+    #endregion Public Methods
   }
 }

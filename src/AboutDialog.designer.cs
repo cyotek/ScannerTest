@@ -1,4 +1,4 @@
-﻿namespace Cyotek.Demo.ScannerTest
+﻿namespace Cyotek.Demo.Windows.Forms
 {
   partial class AboutDialog
   {
@@ -34,6 +34,7 @@
       this.iconPictureBox = new System.Windows.Forms.PictureBox();
       this.webLinkLabel = new System.Windows.Forms.LinkLabel();
       this.versionLabel = new System.Windows.Forms.Label();
+      this.infoLinkLabel = new System.Windows.Forms.LinkLabel();
       ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).BeginInit();
       this.SuspendLayout();
       // 
@@ -48,13 +49,12 @@
       // 
       // copyrightLabel
       // 
-      this.copyrightLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+      this.copyrightLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.copyrightLabel.Location = new System.Drawing.Point(50, 44);
       this.copyrightLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
       this.copyrightLabel.Name = "copyrightLabel";
-      this.copyrightLabel.Size = new System.Drawing.Size(242, 79);
+      this.copyrightLabel.Size = new System.Drawing.Size(402, 34);
       this.copyrightLabel.TabIndex = 3;
       this.copyrightLabel.Text = "Copyright";
       // 
@@ -62,13 +62,13 @@
       // 
       this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
       this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-      this.closeButton.Location = new System.Drawing.Point(217, 126);
+      this.closeButton.Location = new System.Drawing.Point(377, 246);
       this.closeButton.Name = "closeButton";
       this.closeButton.Size = new System.Drawing.Size(75, 23);
       this.closeButton.TabIndex = 0;
       this.closeButton.Text = "Close";
       this.closeButton.UseVisualStyleBackColor = true;
-      this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+      this.closeButton.Click += new System.EventHandler(this.CloseButton_Click);
       // 
       // iconPictureBox
       // 
@@ -82,13 +82,14 @@
       // 
       this.webLinkLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
       this.webLinkLabel.AutoSize = true;
-      this.webLinkLabel.Location = new System.Drawing.Point(12, 131);
+      this.webLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+      this.webLinkLabel.Location = new System.Drawing.Point(12, 251);
       this.webLinkLabel.Name = "webLinkLabel";
       this.webLinkLabel.Size = new System.Drawing.Size(89, 13);
-      this.webLinkLabel.TabIndex = 4;
+      this.webLinkLabel.TabIndex = 5;
       this.webLinkLabel.TabStop = true;
       this.webLinkLabel.Text = "www.cyotek.com";
-      this.webLinkLabel.Click += new System.EventHandler(this.webLinkLabel_LinkClicked);
+      this.webLinkLabel.Click += new System.EventHandler(this.WebLinkLabel_LinkClicked);
       // 
       // versionLabel
       // 
@@ -99,13 +100,27 @@
       this.versionLabel.TabIndex = 2;
       this.versionLabel.Text = "Version";
       // 
+      // infoLinkLabel
+      // 
+      this.infoLinkLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.infoLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+      this.infoLinkLabel.Location = new System.Drawing.Point(53, 78);
+      this.infoLinkLabel.Name = "infoLinkLabel";
+      this.infoLinkLabel.Size = new System.Drawing.Size(399, 165);
+      this.infoLinkLabel.TabIndex = 4;
+      this.infoLinkLabel.UseMnemonic = false;
+      this.infoLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.InfoLinkLabel_LinkClicked);
+      // 
       // AboutDialog
       // 
       this.AcceptButton = this.closeButton;
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.CancelButton = this.closeButton;
-      this.ClientSize = new System.Drawing.Size(304, 161);
+      this.ClientSize = new System.Drawing.Size(464, 281);
+      this.Controls.Add(this.infoLinkLabel);
       this.Controls.Add(this.versionLabel);
       this.Controls.Add(this.iconPictureBox);
       this.Controls.Add(this.closeButton);
@@ -128,5 +143,6 @@
     private System.Windows.Forms.Button closeButton;
     private System.Windows.Forms.PictureBox iconPictureBox;
     private System.Windows.Forms.Label versionLabel;
+    private System.Windows.Forms.LinkLabel infoLinkLabel;
   }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cyotek.Demo.Windows.Forms;
+using System;
 using System.Windows.Forms;
 using WIA;
 
@@ -16,7 +17,7 @@ namespace Cyotek.Demo.ScannerTest
 
     public PropertiesDialog()
     {
-      InitializeComponent();
+      this.InitializeComponent();
     }
 
     public PropertiesDialog(WIA.Properties properties)
