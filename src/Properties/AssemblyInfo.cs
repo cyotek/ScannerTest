@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cyotek Ltd")]
 [assembly: AssemblyProduct("cyotek.com WIA Demonstration")]
-[assembly: AssemblyCopyright("Copyright © 2019 Cyotek Ltd. All Rights Reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2019-2020 Cyotek Ltd. All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
